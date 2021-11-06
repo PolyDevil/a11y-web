@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 
 interface Item {
   id: number;
-  category: "today" | "tomorrow";
+  category: string;
   link: string;
   image: string;
   title: string;
