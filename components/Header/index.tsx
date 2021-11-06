@@ -1,4 +1,5 @@
 import { VFC, useCallback } from "react";
+import Link from "next/link";
 import { useBoolean } from "../../hooks";
 import AuthForm from "./AuthForm";
 import Dialog from "../Dialog";
@@ -15,12 +16,14 @@ const Header: VFC = () => {
     <>
       <header role="banner" className={styles.root}>
         <nav className={styles.nav}>
-          <a className={styles.logo} href="/" aria-label="начальная страница">
-            <img
-              className={styles.logoImage}
-              src="https://pushkinmuseum.art/images/svg/logo_gmii_mobile.svg"
-            />
-          </a>
+          <Link href="/">
+            <a className={styles.logo} aria-label="начальная страница">
+              <img
+                className={styles.logoImage}
+                src="https://pushkinmuseum.art/images/svg/logo_gmii_mobile.svg"
+              />
+            </a>
+          </Link>
 
           <form
             action="https://pushkinmuseum.art/php/search.php"
