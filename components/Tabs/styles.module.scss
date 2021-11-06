@@ -1,0 +1,77 @@
+.tabs :global {
+  .rc-tabs-nav {
+  }
+
+  .rc-tabs-nav-wrap {
+  }
+
+  .rc-tabs-nav-list {
+    display: flex;
+    gap: 8px;
+    position: relative;
+  }
+
+  .rc-tabs-tab {
+    border-radius: 8px;
+
+    &.rc-tabs-tab-active {
+      background: #c7d2e9;
+    }
+  }
+
+  .rc-tabs-tab-btn {
+    font-size: 22px;
+    color: #000000;
+    padding: 18px 40px;
+    cursor: pointer;
+
+    transition: color 0.3s ease-in, background 0.3s ease-in;
+
+    &:hover {
+      text-decoration-line: none;
+      color: #fff;
+      background: #380093;
+    }
+
+    &:focus:not(:focus-visible) {
+      color: #fff;
+      background: #380093;
+      outline: none;
+    }
+
+    &:focus-visible {
+      color: #fff;
+      background: #380093;
+      outline: 3px solid #fff;
+      outline-offset: -6px;
+    }
+  }
+
+  .rc-tabs-ink-bar {
+    position: absolute;
+
+    &.rc-tabs-ink-bar-animated {
+    }
+  }
+
+  .rc-tabs-nav-operations {
+    display: none;
+
+    &.rc-tabs-nav-operations-hidden {
+    }
+  }
+
+  .rc-tabs-nav-more {
+  }
+
+  .rc-tabs-content-holder {
+  }
+
+  .rc-tabs-content {
+  }
+
+  .rc-tabs-tabpane {
+    &.rc-tabs-tabpane-active {
+    }
+  }
+}

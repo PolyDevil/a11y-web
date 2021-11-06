@@ -1,0 +1,29 @@
+@import "styles/_mixins";
+
+.root {
+  border-top: 2px solid black;
+}
+
+.content {
+  @extend %layout;
+
+  padding: 60px 0 60px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-areas:
+    "sitemap subscribe"
+    "social subscribe";
+  gap: 40px;
+}
+
+.sitemap {
+  grid-area: sitemap;
+}
+
+.social {
+  grid-area: social;
+}
+
+.subscribe {
+  grid-area: subscribe;
+}

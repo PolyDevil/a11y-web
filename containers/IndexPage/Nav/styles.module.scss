@@ -1,0 +1,39 @@
+.root {
+  padding: 20px 0;
+}
+
+.list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+}
+
+.link {
+  background-color: #5100d3;
+  color: #fff;
+  padding: 10px 20px;
+  display: block;
+  cursor: pointer;
+
+  transition: background 0.3s ease-in;
+
+  &:hover {
+    background: #380093;
+  }
+
+  &:focus:not(:focus-visible) {
+    background: #380093;
+    outline: none;
+  }
+
+  &:focus-visible {
+    background: #380093;
+    outline: 3px solid #fff;
+    outline-offset: -6px;
+  }
+}

@@ -1,0 +1,113 @@
+@import "styles/_colors";
+
+.title {
+  font-size: 24px;
+  margin: 0 0 32px;
+}
+
+.form {
+  display: grid;
+  grid-template-areas:
+    "email submit"
+    "agreement agreement";
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 18px;
+}
+
+.email {
+  grid-area: email;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 20px;
+  border-radius: 6px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background 0.3s ease-in;
+
+  &:hover {
+    background: rgba(black, 0.1);
+  }
+
+  &:focus:not(:focus-visible) {
+    background: rgba(black, 0.1);
+    outline: none;
+  }
+
+  &:focus-visible {
+    background: rgba(black, 0.1);
+    outline: 3px solid #5100d3;
+    outline-offset: -3px;
+  }
+}
+
+.agreement {
+  grid-area: agreement;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+  accent-color: #5d16d5;
+  cursor: pointer;
+  transition: background 0.3s ease-in;
+
+  &:hover {
+    background: rgba(black, 0.1);
+  }
+
+  &:focus:not(:focus-visible) {
+    background: rgba(black, 0.1);
+    outline: none;
+  }
+
+  &:focus-visible {
+    background: rgba(black, 0.1);
+    outline: 3px solid #5100d3;
+    outline-offset: -3px;
+  }
+}
+
+.checkboxText {
+  font-size: 16px;
+  padding-top: 4px;
+}
+
+.submit {
+  grid-area: submit;
+  font-size: 18px;
+  color: #fff;
+  background: #5d16d5;
+  border-radius: 8px;
+  border: 1px solid #5d16d5;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: color 0.3s ease-in, background 0.3s ease-in;
+
+  &:hover {
+    text-decoration: underline;
+    color: #fff;
+    background: #380093;
+  }
+
+  &:focus:not(:focus-visible) {
+    color: #fff;
+    background: #380093;
+    outline: none;
+  }
+
+  &:focus-visible {
+    color: #fff;
+    background: #380093;
+    outline: 3px solid #fff;
+    outline-offset: -6px;
+  }
+}

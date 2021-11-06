@@ -1,0 +1,107 @@
+@import "styles/_colors";
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 40px;
+}
+
+.item {
+  height: 240px;
+}
+
+.card {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "image header" "image footer";
+  grid-template-columns: minmax(300px, 480px) 1fr auto;
+  grid-template-rows: minmax(0, 1fr);
+  height: 100%;
+  position: relative;
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  gap: 8px;
+  align-content: start;
+}
+
+.imageBox {
+  grid-area: image;
+  position: relative;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-color: #f9f9fb;
+  display: block;
+}
+
+.subtitle {
+  font-size: 26px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.timeframe {
+  font-size: 20px;
+  color: $primary-light-color;
+  text-align: end;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action {
+  padding: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  text-align: center;
+
+  &:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+
+  cursor: pointer;
+
+  transition: color 0.3s ease-in, background 0.3s ease-in;
+
+  &:hover {
+    text-decoration-line: none;
+    color: #fff;
+    background: #380093;
+  }
+
+  &:focus:not(:focus-visible) {
+    color: #fff;
+    background: #380093;
+    outline: none;
+  }
+
+  &:focus-visible {
+    color: #fff;
+    background: #380093;
+    outline: 3px solid #fff;
+    outline-offset: -6px;
+  }
+}

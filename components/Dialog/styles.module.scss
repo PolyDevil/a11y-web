@@ -1,0 +1,54 @@
+.dialog :global {
+  .rc-dialog {
+  }
+
+  .rc-dialog-title {
+    font-size: 20px;
+  }
+
+  .rc-dialog-content {
+  }
+
+  .rc-dialog-close {
+    opacity: 1;
+    transition: color 0.3s ease-in;
+
+    &:hover {
+      color: #380093;
+    }
+
+    &:focus:not(:focus-visible) {
+      color: #380093;
+      outline: none;
+    }
+
+    &:focus-visible {
+      color: #380093;
+      outline: 3px solid #380093;
+      outline-offset: -3px;
+    }
+  }
+
+  .rc-dialog-close-x:after {
+  }
+
+  .rc-dialog-close:hover {
+  }
+
+  .rc-dialog-header {
+    padding-left: 40px;
+  }
+
+  .rc-dialog-body {
+    padding: 0;
+  }
+
+  .rc-dialog-footer {
+  }
+
+  .rc-dialog-mask {
+  }
+
+  .rc-dialog-mask-hidden {
+  }
+}

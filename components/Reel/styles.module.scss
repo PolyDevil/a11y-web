@@ -1,0 +1,17 @@
+.root {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: auto;
+}
+
+.root > li {
+  width: auto;
+  height: 100%;
+  flex: 0 0 auto;
+  flex-basis: auto;
+}
+
+.root > li + li {
+  margin-left: 20px;
+}

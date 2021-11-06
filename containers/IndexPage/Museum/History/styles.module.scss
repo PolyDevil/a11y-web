@@ -1,0 +1,44 @@
+.root {
+}
+
+.content {
+  display: grid;
+  gap: 20px;
+  padding: 48px 0;
+}
+
+.description {
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  margin: 0;
+  max-width: 64ch;
+}
+
+.readMore {
+  font-size: 22px;
+  line-height: 26px;
+  text-decoration-line: underline;
+  color: #000000;
+
+  transition: color 0.3s ease-in, background 0.3s ease-in;
+
+  &:hover {
+    text-decoration: underline;
+    color: #fff;
+    background: #5100d3;
+  }
+
+  &:focus:not(:focus-visible) {
+    color: #fff;
+    background: #5100d3;
+    outline: none;
+  }
+
+  &:focus-visible {
+    color: #fff;
+    background: #5100d3;
+    outline: 3px solid #5100d3;
+    outline-offset: -3px;
+  }
+}

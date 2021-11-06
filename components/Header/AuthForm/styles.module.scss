@@ -1,0 +1,62 @@
+.form {
+  display: grid;
+  gap: 36px;
+  padding: 40px;
+}
+
+.field {
+  display: grid;
+  color: black;
+  gap: 8px;
+}
+
+.input {
+  padding: 10px 16px;
+  font-size: 20px;
+  border-radius: 6px;
+  border: 1px solid black;
+
+  transition: background 0.3s ease-in;
+
+  &:hover {
+    background: rgba(black, 0.1);
+  }
+
+  &:focus:not(:focus-visible) {
+    background: rgba(black, 0.1);
+    outline: none;
+  }
+
+  &:focus-visible {
+    background: rgba(black, 0.1);
+    outline: 3px solid #5100d3;
+    outline-offset: -3px;
+  }
+}
+
+.submit {
+  padding: 10px 16px;
+  font-size: 20px;
+  color: #fff;
+  background: #5100d3;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 6px;
+
+  transition: background 0.3s ease-in;
+
+  &:hover {
+    background: #380093;
+  }
+
+  &:focus:not(:focus-visible) {
+    background: #380093;
+    outline: none;
+  }
+
+  &:focus-visible {
+    background: #380093;
+    outline: 3px solid #fff;
+    outline-offset: -6px;
+  }
+}

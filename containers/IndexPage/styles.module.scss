@@ -1,0 +1,12 @@
+@import "styles/_mixins";
+
+.nav {
+  @extend %layout;
+}
+
+.root {
+  @extend %layout;
+
+  display: grid;
+  gap: 120px;
+}

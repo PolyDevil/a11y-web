@@ -1,0 +1,45 @@
+.root {
+  padding-bottom: 60px;
+}
+
+.title {
+  font-size: 50px;
+  margin: 0 0 40px;
+}
+
+.description {
+  font-size: 22px;
+  line-height: 26px;
+  max-width: 64ch;
+
+  & a {
+    color: #be6ed2;
+  }
+
+  & + & {
+    margin: 24px 0 0;
+  }
+
+  & a {
+    cursor: pointer;
+    transition: color 0.3s ease-in, background 0.3s ease-in;
+
+    &:hover {
+      text-decoration-line: underline;
+      color: #fff;
+      background: #380093;
+    }
+
+    &:focus:not(:focus-visible) {
+      color: #fff;
+      background: #380093;
+      outline: none;
+    }
+
+    &:focus-visible {
+      color: #fff;
+      background: #380093;
+      outline: none;
+    }
+  }
+}
